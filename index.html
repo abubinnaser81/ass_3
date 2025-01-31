@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse4Pets</title>
+
+    <!-- Tailwind  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- color customies  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- fonts sora  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- fonts ADLaM Display  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/98c9c535e9.js" crossorigin="anonymous"></script>
+
+    <style>
+        .sora-font {
+            font-family: "Sora", serif;
+        }
+
+        .adlam-display-font {
+            font-family: "ADLaM Display", serif;
+        }
+    </style>
+</head>
+
+<!-- container mx-autopx-6  -->
+
+<body class="sora-font">
+
+    <header class="bg-[#FFF9F4]">
+        <!-- navbar  -->
+        <div class="navbar container mx-auto px-6">
+            <!-- logo section  -->
+            <div class="navbar-start md:flex md:items-center md:gap-2">
+                <img src="./assets/logo-header.png" alt="">
+                <div class="hidden md:flex">
+                    <a class="text-2xl font-semibold text-[#111111]">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
+                </div>
+            </div>
+            <!-- ul section  -->
+            <div class="  hidden lg:flex navbar-center pr-">
+                <ul class="menu menu-horizontal px-1 text-xl text-[#111111] font-normal ">
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+            </div>
+            <!-- button section  -->
+            <div class="navbar-end hidden lg:flex items-center gap-4  ">
+                <img src="./assets/bell.png" alt="">
+                <img src="./assets/search.png" alt="">
+                <button class="btn bg-white border-2  border-[#FFDC26] px-6 text-xl">Login</button>
+                <button class="btn btn-warning px-6 text-xl">Register</button>
+
+            </div>
+
+            <!-- drowdown button  -->
+            <div class="dropdown flex navbar-end   md:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden  ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-36 p-2 w-36 shadow text-[#111111] font-normal">
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- Pamper Your Pet section-1  -->
+        <section class="container mx-auto px-6 my-16 flex flex-col ">
+            <div class="space-y-4 md:space-y-6 absolute">
+                <h1 class="adlam-display-font text-2xl md:text-6xl font-medium text-[#111111]">Pamper Your Pet, <br>
+                    Because They
+                    Deserve <br> the Bes</h1>
+                <p class="text-xs md:text-xl text-[#111111] font-light w-[65%] md:w-[50%]">Discover a world of treats,
+                    toys, and
+                    essentials
+                    handpicked for your furry friends. Shop now and make
+                    tails wag with
+                    joy!</p>
+                <button class="btn btn-warning px-6 text-xs md:text-xl text-[#111111]">Find a pet</button>
+            </div>
+            <!-- img  -->
+            <div class="">
+                <img class="w-full h-[450px] md:h-auto" src="./assets/cat-big.png" alt="">
+            </div>
+
+        </section>
+
+        <!-- Browse By Categories  -->
+        <section class="container mx-auto px-6 my-20">
+            <h1 class="adlam-display-font text-2xl md:text-4xl text-[#111111] font-medium mb-6">Browse By Categories
+            </h1>
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
+                <!-- card-1  -->
+                <div class="bg-[#F9DF8A] p-6 text-center bottom-2 rounded-xl shadow-lg ">
+                    <div class="avatar">
+                        <div class="w-24 bg-white rounded-full p-6">
+                            <img src="./assets/dog-cartoon.png" />
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-bold py-2">Dog</h1>
+                    <p>3 items</p>
+                </div>
+                <!-- card-2  -->
+                <div class="bg-[#F9DF8A] p-6 text-center bottom-2 rounded-xl shadow-lg ">
+                    <div class="avatar">
+                        <div class="w-24 bg-white rounded-full p-6">
+                            <img src="./assets/fish-cartoon.png" />
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-bold py-2">Fish</h1>
+                    <p>3 items</p>
+                </div>
+                <!-- card-3  -->
+                <div class="bg-[#F9DF8A] p-6 text-center bottom-2 rounded-xl shadow-lg ">
+                    <div class="avatar">
+                        <div class="w-24 bg-white rounded-full p-6">
+                            <img src="./assets/cat-cartoon.png" />
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-bold py-2">Cat</h1>
+                    <p>3 items</p>
+                </div>
+                <!-- card-4  -->
+                <div class="bg-[#F9DF8A] p-6 text-center bottom-2 rounded-xl shadow-lg ">
+                    <div class="avatar">
+                        <div class="w-24 bg-white rounded-full p-6">
+                            <img src="./assets/bird-cartoon.png" />
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-bold py-2">Birds</h1>
+                    <p>3 items</p>
+                </div>
+                <!-- card-5  -->
+                <div class="bg-[#F9DF8A] p-6 text-center bottom-2 rounded-xl shadow-lg ">
+                    <div class="avatar">
+                        <div class="w-24 bg-white rounded-full p-6">
+                            <img src="./assets/mouse-cartoon.png" />
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-bold py-2">Small pet</h1>
+                    <p>3 items</p>
+                </div>
+                <!-- card-6  -->
+                <div class="bg-[#F9DF8A] p-6 text-center bottom-2 rounded-xl shadow-lg ">
+                    <div class="avatar">
+                        <div class="w-24 bg-white rounded-full p-6">
+                            <img src="./assets/rabbit-cartoon.png" />
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-bold py-2">Rabit</h1>
+                    <p>3 items</p>
+                </div>
+
+
+            </div>
+        </section>
+
+        
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
